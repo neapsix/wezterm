@@ -22,6 +22,15 @@ return {
 }
 ```
 
+To style the tab bar too, paste the contents of one of the `lua` files into your `wezterm` configuration file above the `return` block. Specify the color definitions in your configuration:
+
+```lua
+return {
+   colors = colors, 
+   window_frame = window_frame, -- needed only if using fancy tab bar
+}
+```
+
 ## Gallery
 
 ![Rosé Pine with App](assets/template.png)
