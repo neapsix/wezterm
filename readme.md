@@ -22,7 +22,7 @@ return {
 }
 ```
 
-To style the tab bar too, paste the contents of one of the `lua` files into your `wezterm` configuration file above the `return` block. Then, specify the color definitions in your configuration:
+To style the tab bar too, paste the contents of one of the `ui/` files into your `wezterm` configuration file above the `return` block. Then, specify the color definitions in your configuration:
 
 ```lua
 return {
