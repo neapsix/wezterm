@@ -13,8 +13,7 @@
 
 ## Usage
 
-Move `colors/` to `~/.config/wezterm/colors/` (Linux, macOS, and FreeBSD) or the directory containing `wezterm.exe` (Windows). Select a color scheme in your `wezterm` configuration file:
-
+Move `colors/` to `~/.config/wezterm/colors/` (Linux, macOS, and FreeBSD) or the directory containing `wezterm.exe` (Windows). Select a color scheme in your `wezterm.lua` configuration file:
 
 ```lua
 return {
@@ -22,7 +21,15 @@ return {
 }
 ```
 
-To style the tab bar too, paste the contents of one of the `ui/` files into your `wezterm` configuration file above the `return` block. Then, specify the color definitions in your configuration:
+To style the tab bar too, move `lua/` into the same directory. Load the module for the variant you want to use by adding these lines to `wezterm.lua` above the `return` block: 
+
+```lua
+local colors = require 'lua/rose-pine'.colors()
+local window_frame = require 'lua/rose-pine'.window_frame()
+
+```
+
+Then, specify the color definitions in your configuration:
 
 ```lua
 return {
