@@ -8,8 +8,5 @@ cursor_fg = "#575279"
 selection_bg = "#dfdad9"
 selection_fg = "#575279"
 
-# ansi = {"black", "maroon", "green", "olive", "navy", "purple", "teal", "silver"},
-# brights = {"grey", "red", "lime", "yellow", "blue", "fuchsia", "aqua", "white"},
-
 ansi = ["#f2e9de", "#b4637a", "#286983", "#ea9d34", "#56949f", "#907aa9", "#d7827e", "#575279"]
 brights = ["#6e6a86", "#b4637a", "#286983", "#ea9d34", "#56949f", "#907aa9", "#d7827e", "#575279"]
