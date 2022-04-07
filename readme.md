@@ -39,8 +39,17 @@ return {
 ```
 
 ## Gallery
+**Rosé Pine**
 
-![Rosé Pine with App](assets/template.png)
+![WezTerm with Rosé Pine](https://imgur.com/FEAZt2h.png)
+
+**Rosé Pine Moon**
+
+![WezTerm with Rosé Pine Moon](https://imgur.com/ToeIDCC.png)
+
+**Rosé Pine Dawn**
+
+![WezTerm with Rosé Pine Dawn](https://imgur.com/ES6HJXo.png)
 
 ## Thanks to
 
