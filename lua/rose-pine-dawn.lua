@@ -4,13 +4,13 @@ local M = {}
 
 local palette = {
     base = '#faf4ed',
-    highlight_med = '#dfdad9',
+    overlay = '#f2e9e1',
     muted = '#9893a5',
     text = '#575279',
 }
 
 local active_tab = {
-    bg_color = palette.highlight_med,
+    bg_color = palette.overlay,
     fg_color = palette.text,
 }
 
