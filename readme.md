@@ -54,7 +54,7 @@ return {
 
 ### Rosé Pine Dawn
 
-![WezTerm with Rosé Pine Dawn](https://imgur.com/ES6HJXo.png)
+![WezTerm with Rosé Pine Dawn](https://imgur.com/4WUKFS9.png)
 
 ## Thanks to
 
