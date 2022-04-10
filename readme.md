@@ -46,11 +46,11 @@ return {
 
 ### Rosé Pine
 
-![WezTerm with Rosé Pine](https://imgur.com/FEAZt2h.png)
+![WezTerm with Rosé Pine](https://i.imgur.com/ZbO0slG.png)
 
 ### Rosé Pine Moon
 
-![WezTerm with Rosé Pine Moon](https://imgur.com/ToeIDCC.png)
+![WezTerm with Rosé Pine Moon](https://i.imgur.com/Ohx3lv8.png)
 
 ### Rosé Pine Dawn
 
