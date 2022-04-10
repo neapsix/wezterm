@@ -13,19 +13,23 @@
 
 ## Usage
 
-Move `colors/` to `~/.config/wezterm/colors/` (Linux, macOS, and FreeBSD) or the directory containing `wezterm.exe` (Windows). Select a color scheme in your `wezterm.lua` configuration file:
+Move `colors/` to `~/.config/wezterm/colors/` (Linux, macOS, and FreeBSD) or
+the directory containing `wezterm.exe` (Windows). Select a color scheme in your
+`wezterm.lua` configuration file:
 
 ```lua
 return {
-  color_scheme = "rose-pine",
+    color_scheme = 'rose-pine',
 }
 ```
 
-To style the tab bar too, move `lua/` into the same directory. Load the module for the variant you want to use by adding these lines to `wezterm.lua` above the `return` block: 
+To style the tab bar too, move `lua/` to the same directory. Load the module
+for the variant you want to use by adding these lines to `wezterm.lua` above the
+`return` block:
 
 ```lua
-local colors = require 'lua/rose-pine'.colors()
-local window_frame = require 'lua/rose-pine'.window_frame()
+local colors = require('lua/rose-pine').colors()
+local window_frame = require('lua/rose-pine').window_frame()
 
 ```
 
@@ -33,33 +37,25 @@ Then, specify the color definitions in your configuration:
 
 ```lua
 return {
-   colors = colors, 
-   window_frame = window_frame, -- needed only if using fancy tab bar
+    colors = colors,
+    window_frame = window_frame, -- needed only if using fancy tab bar
 }
 ```
 
 ## Gallery
-**Rosé Pine**
+
+### Rosé Pine
 
 ![WezTerm with Rosé Pine](https://imgur.com/FEAZt2h.png)
 
-**Rosé Pine Moon**
+### Rosé Pine Moon
 
 ![WezTerm with Rosé Pine Moon](https://imgur.com/ToeIDCC.png)
 
-**Rosé Pine Dawn**
+### Rosé Pine Dawn
 
 ![WezTerm with Rosé Pine Dawn](https://imgur.com/ES6HJXo.png)
 
 ## Thanks to
 
-- [You, it's you!](https://github.com/<username>)
-
-## Style guide
-
-> Be sure to remove this section 😌
-
-- [x] Lowercase meta files, eg. `readme.md`
-- [x] Repo name should be the simplest version of the app name, eg. iterm instead of iTerm2
-- [x] Format repo description as "Soho vibes for App"
-- [ ] Generate and upload social image via [Rosé Pine Images](https://rose-pine-images.vercel.app)
+- [neapsix](https://github.com/neapsix)
