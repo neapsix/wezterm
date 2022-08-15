@@ -1,4 +1,8 @@
 -- rose-pine
+-- Copyright (c) 2022 rose-pine
+
+-- repository: https://github.com/neapsix/wezterm
+-- license: MIT
 
 local M = {}
 
