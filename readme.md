@@ -13,19 +13,10 @@
 
 ## Usage
 
-Move `colors/` to `~/.config/wezterm/colors/` (Linux, macOS, and FreeBSD) or
-the directory containing `wezterm.exe` (Windows). Select a color scheme in your
-`wezterm.lua` configuration file:
-
-```lua
-return {
-    color_scheme = 'rose-pine',
-}
-```
-
-To style the tab bar too, move `lua/` to the same directory. Load the module
-for the variant you want to use by adding these lines to `wezterm.lua` above the
-`return` block:
+To style the terminal and tab bar, move `lua/` to `~/.config/wezterm/lua/`
+(Linux, macOS, and FreeBSD) or the directory containing `wezterm.exe` (Windows).
+Load the module for the variant you want to use by adding these lines to
+`wezterm.lua` above the `return` block:
 
 ```lua
 local colors = require('lua/rose-pine').colors()
@@ -41,6 +32,9 @@ return {
     window_frame = window_frame, -- needed only if using fancy tab bar
 }
 ```
+
+Make sure `color_scheme` is not specified, because the color scheme overrides
+all custom colors defined in the lua configuration.
 
 ## Gallery
 
