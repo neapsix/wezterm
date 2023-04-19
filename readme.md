@@ -36,6 +36,10 @@ return {
 Make sure `color_scheme` is not specified, because the color scheme overrides
 all custom colors defined in the lua configuration.
 
+Note that WezTerm now (as of March 2023) includes built-in Rosé Pine color
+schemes imported from the Gogh collection. The color schemes here use slightly
+different color selections and also include colors for the tab bar.
+
 ## Gallery
 
 ### Rosé Pine
