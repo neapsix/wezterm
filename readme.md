@@ -13,23 +13,32 @@
 
 ## Usage
 
-To style the terminal and tab bar, move `lua/` to `~/.config/wezterm/lua/`
-(Linux, macOS, and FreeBSD) or the directory containing `wezterm.exe` (Windows).
-Load the module for the variant you want to use by adding these lines to
-`wezterm.lua` above the `return` block:
+To install the theme using the built-in WezTerm plugin support, add these lines
+to your `wezterm.lua` file above the `return` block (available variants are
+`main`, `moon`, and `dawn`):
 
 ```lua
-local colors = require('lua/rose-pine').colors()
-local window_frame = require('lua/rose-pine').window_frame()
+local wezterm = require('wezterm')
+local theme = wezterm.plugin.require('https://github.com/neapsix/wezterm').main
+```
+
+If you prefer to install the theme manually, copy `plugin/init.lua` to
+`~/.config/wezterm/lua/` (Linux, macOS, and FreeBSD) or the directory containing
+`wezterm.exe` (Windows), and rename it to `rose-pine.lua`. Load the module and
+variant you want to use:
+
+```lua
+local theme = require('lua/rose-pine').main
 
 ```
 
-Then, specify the color definitions in your configuration:
+Then, specify the color definitions in your configuration to style the terminal
+and tab bar:
 
 ```lua
 return {
-    colors = colors,
-    window_frame = window_frame, -- needed only if using fancy tab bar
+    colors = theme.colors(),
+    window_frame = theme.window_frame(), -- needed only if using fancy tab bar
 }
 ```
 
